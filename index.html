@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7de6ab665e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Inter font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Add Cash</title>
+  </head>
+  <body class="font-sans leading-normal text-zinc-800 bg-white select-none">
+    <nav
+      class="w-screen fixed z-10 bg-transparent shadow-lg shadow-neutral-400/40"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <!-- add cash logo -->
+            <a class="flex items-center py-3" href="index.html">
+              <h2
+                class="font-sans text-2xl font-semibold leading-tight tracking-tighter"
+              >
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Add Cash
+              </h2>
+            </a>
+          </div>
+          <!-- secondary nav -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a
+              href="index.html"
+              class="py-5 px-3 font-medium text-base hover:text-indigo-500"
+              >Home</a
+            >
+            <a
+              href="#steps"
+              class="py-5 px-3 font-medium text-base hover:text-indigo-500"
+              >¿Cómo pedir un préstamo?</a
+            >
+            <a
+              href="#testimonials"
+              class="py-5 px-3 font-medium text-base hover:text-indigo-500"
+              >Calificaciones</a
+            >
+            <a
+              href="#contact"
+              class="py-5 pl-3 pr-6 font-medium text-base hover:text-indigo-500"
+              >Contacto</a
+            >
+            <a
+              href="register.html"
+              class="inline-block w-fit py-3 px-4 rounded-md bg-indigo-500 text-white cursor-pointer transition-all delay-300 hover:bg-indigo-600 shadow-sm shadow-indigo-500"
+            >
+              Solicitar servicio
+            </a>
+          </div>
+          <!-- mobile button -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-btn">
+              <svg
+                class="w-8 h-8 text-indigo-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu hidden md:hidden fixed right-0">
+        <a
+          href="index.html"
+          class="block py-4 px-4 text-sm font-medium bg-gradient-to-t from-slate-200 to-white hover:text-indigo-400"
+          >Home</a
+        >
+        <a
+          href="#steps"
+          class="block py-4 px-4 text-sm font-medium bg-gradient-to-t from-slate-200 to-white hover:text-indigo-400"
+          >¿Cómo pedir un préstamo?</a
+        >
+        <a
+          href="#testimonials"
+          class="block py-4 px-4 text-sm font-medium bg-gradient-to-t from-slate-200 to-white hover:text-indigo-400"
+          >Calificaciones</a
+        >
+        <a
+          href="#contact"
+          class="block py-4 px-4 text-sm font-medium bg-gradient-to-t from-slate-200 to-white hover:text-indigo-400"
+          >Contacto</a
+        >
+        <div class="block py-2 text-sm bg-indigo-500 hover:bg-indigo-500">
+          <a
+            href="index.html"
+            class="inline-block w-fit py-3 px-4 rounded-md bg-indigo-500 text-white cursor-pointer transition-all delay-300 hover:bg-indigo-600 shadow-sm shadow-indigo-500"
+          >
+            Solicitar servicio
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <header
+      class="h-screen grid place-items-center overflow-hidden bg-cover bg-no-repeat bg-center"
+      style="
+        background-image: linear-gradient(
+            rgb(224, 231, 255),
+            rgb(129 140 248 / 5%)
+          ),
+          url('./pexels-andrea-piacquadio-3769021.jpg');
+      "
+    >
+      <div class="container w-10/12 mt-12 grid grid-cols-1 items-center">
+        <div>
+          <h1
+            class="text-5xl font-bold leading-none tracking-tighter"
+            id="header-title"
+          >
+            Préstamos exclusivos<br />
+            para su empresa
+          </h1>
+          <p class="my-4 mx-0 text-zinc-700 text-md">
+            Contactenos y comience a ofrecer a sus<br />
+            empleados la posibilidad de acceder a un <br />
+            préstamo de forma intuitiva, rápida y segura.
+          </p>
+          <a
+            href="#contact"
+            class="px-10 inline-block w-fit py-3 rounded-md bg-indigo-500 text-white cursor-pointer transition-all delay-300 hover:bg-indigo-600 shadow-sm shadow-indigo-500"
+          >
+            Adherite
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+    <section id="steps" class="mx-16 py-20 relative">
+      <h4
+        class="font-medium text-sm text-zinc-500 uppercase text-center mt-0 mx-0 mb-8"
+      >
+        Elegí Add Cash
+      </h4>
+      <h1
+        class="text-5xl tracking-tighter font-semibold text-zinc-700 text-center mt-0 mx-4 mb-8"
+      >
+        ¿Cómo acceder a un préstamo?
+      </h1>
+      <div class="container grid grid-cols-1 md:grid-cols-2 place-items-center">
+        <div class="mt-14 px-4 md:px-32">
+          <!-- <article class="flex flex-col items-center gap-4 mb-14">
+            <div
+              class="bg-emerald-400 text-white py-1 px-7 rounded-full flex h-fit"
+            >
+              <h4 class="text-lg font-medium">1</h4>
+            </div>
+            <div class="flex flex-col items-center">
+              <h4 class="text-lg">
+                <i class="fa-solid fa-envelope"></i> Notificacion
+              </h4>
+              <p class="text-center mt-1.5 block text-sm">
+                Una vez adherida su empresa, se le notificara a sus empleados la
+                posibilidad de pedir un préstamo mediante una notificacion por
+                email.
+              </p>
+            </div>
+          </article> -->
+          <article class="flex flex-col items-center gap-4 mb-14">
+            <div
+              class="bg-emerald-400 text-white py-1 px-7 rounded-full flex h-fit"
+            >
+              <h4 class="text-lg font-medium">1</h4>
+            </div>
+            <div class="flex flex-col items-center">
+              <h4 class="text-lg">
+                <i class="fa-solid fa-user-plus mr-1.5"></i>Registro
+              </h4>
+              <p class="text-center mt-1.5 block text-sm">
+                Una vez adherida su empresa, se brindara a traves de una
+                notificacion por email el acceso a nuestro formulario de
+                registro donde debera completar los datos requeridos. Al
+                confirmar la creacion de cuenta, debera iniciar sesion con sus
+                credenciales.
+              </p>
+              <!-- <p class="text-center mt-1.5 block text-sm">
+                En el email enviado, se brindara acceso a nuestro formulario de
+                registro donde debera completar los datos requeridos. Al
+                confirmar la creacion de cuenta, debera iniciar sesion con sus
+                credenciales.
+              </p> -->
+            </div>
+          </article>
+          <article class="flex flex-col items-center gap-4 mb-14">
+            <div
+              class="bg-emerald-400 text-white py-1 px-7 rounded-full flex h-fit"
+            >
+              <h4 class="text-lg font-medium">2</h4>
+            </div>
+            <div class="flex flex-col items-center">
+              <h4 class="text-lg">
+                <i class="fa-solid fa-money-bill-transfer mr-1.5"></i>Solicitud
+              </h4>
+              <p class="text-center mt-1.5 block text-sm">
+                Solicite el monto deseado. Luego de enviar su solicitud, debera
+                esperar que validemos su identidad. Si se confirma la peticion,
+                se realizará la transferencia correspondiente a su cuenta de
+                Mercado Pago.
+              </p>
+            </div>
+          </article>
+          <article class="flex flex-col items-center gap-4 mb-14">
+            <div
+              class="bg-emerald-400 text-white py-1 px-7 rounded-full flex h-fit"
+            >
+              <h4 class="text-lg font-medium">3</h4>
+            </div>
+            <div class="flex flex-col items-center">
+              <h4 class="text-lg">
+                <i class="fa-solid fa-file-invoice-dollar mr-1.5"></i>Pago
+              </h4>
+              <p class="text-center mt-1.5 block text-sm">
+                Al finalizar el mes, se realizará el pedido de débito del
+                préstamo otorgado y costo adicional por uso de servicio.
+              </p>
+            </div>
+          </article>
+        </div>
+        <!-- phone prototype -->
+        <article class="hidden md:flex">
+          <div
+            class="bg-stone-900 w-2 h-8 rounded-r-md absolute right-44 top-72 mr-3.5 mt-12"
+          ></div>
+          <div
+            class="bg-stone-900 w-2 h-8 rounded-r-md absolute right-44 top-80 mr-3.5 mt-14"
+          ></div>
+          <div
+            class="bg-stone-900 w-2 h-9 rounded-r-md absolute right-44 top-96 mr-3.5 mt-16"
+          ></div>
+          <div
+            class="bg-stone-800 rounded-3xl p-3 md:p-20 md:absolute right-48 top-64 w-72 border-4 border-stone-600 shadow-md shadow-slate-500 box-border"
+          >
+            <div class="bg-white h-96 overflow-hidden rounded-2xl">
+              <article>
+                <div
+                  class="bg-white rounded-2xl md:absolute right-3 top-4 w-64 box-border"
+                  style="z-index: 1"
+                >
+                  <img
+                    src="./phone-top.jpg"
+                    class="mt-2 rounded-t-lg shadow-md shadow-slate-300"
+                    alt=""
+                  />
+                  <div
+                    class="bg-stone-800 pt-2.5 w-16 md:absolute right-24 top-0 rounded-t-none rounded-b-md"
+                  ></div>
+                  <div
+                    class="flex items-center flex-col justify-center rounded-2xl shadow-2xl box-border"
+                  >
+                    <div class="py-6 px-9 w-full box-border">
+                      <h3 class="text-lg leading-7 mb-1">Monto a solicitar</h3>
+                      <h4 class="text-2xl font-medium leading-10 mb-5">
+                        $200.000
+                      </h4>
+                      <div
+                        class="relative w-full cursor-pointer rounded-2xl h-4 box-border"
+                      >
+                        <div
+                          class="absolute left-0 right-0 bg-indigo-500 rounded-2xl h-3 box-border"
+                        ></div>
+                        <div
+                          class="absolute left-96 right-0 bg-emerald-400 rounded-2xl box-border"
+                        ></div>
+                        <div
+                          class="absolute touch-none left-40 bg-white rounded-full border-indigo-500 border-2 h-8 -top-3 w-8 box-border"
+                          style="z-index: 1"
+                          tabindex="0"
+                          role="slider"
+                          aria-orientation="horizontal"
+                          aria-valuenow="200000"
+                          aria-valuemin="5000"
+                          aria-valuemax="200000"
+                        ></div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-between mt-5 box-border"
+                      >
+                        <span
+                          class="text-indigo-400 text-md leading-7 box-border"
+                          >$5.000</span
+                        >
+                        <span
+                          class="text-indigo-400 text-md leading-7 box-border"
+                          >$200.000</span
+                        >
+                      </div>
+                    </div>
+                    <div class="py-3 px-9 w-full box-border">
+                      <h3 class="text-xl leading-7 mb-2">
+                        <strong>12 cuotas</strong>
+                        de
+                      </h3>
+                      <h4 class="text-2xl font-medium leading-10 mb-5">
+                        $32.423,95
+                        <small class="text-lg leading-6">x mes</small>
+                      </h4>
+                      <div
+                        class="relative w-full cursor-pointer rounded-2xl h-4 box-border"
+                      >
+                        <div
+                          class="absolute left-0 right-0 bg-indigo-500 rounded-2xl h-3 box-border"
+                        ></div>
+                        <div
+                          class="absolute left-96 right-0 bg-emerald-400 rounded-2xl box-border"
+                        ></div>
+                        <div
+                          class="absolute touch-none left-40 bg-white rounded-full border-indigo-500 border-2 h-8 -top-3 w-8 box-border"
+                          style="z-index: 1"
+                          tabindex="0"
+                          role="slider"
+                          aria-orientation="horizontal"
+                          aria-valuenow="12"
+                          aria-valuemin="3"
+                          aria-valuemax="12"
+                        ></div>
+                      </div>
+                      <div
+                        class="flex flex-row justify-between mt-5 box-border"
+                      >
+                        <span
+                          class="text-indigo-400 text-md leading-7 box-border"
+                          >3 cuotas</span
+                        >
+                        <span
+                          class="text-indigo-400 text-md leading-7 box-border"
+                          >12 cuotas</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="py-2 px-9 w-full rounded-b-2xl bg-slate-100 box-border"
+                    >
+                      <div class="flex justify-between items-center">
+                        <svg
+                          class="w-5 h-6 text-slate-600"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                          />
+                        </svg>
+                        <i class="fa-regular fa-square text-slate-600"></i>
+                        <svg
+                          class="w-5 h-6 text-slate-600"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5L8.25 12l7.5-7.5"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- END OF STEPS -->
+    <section id="testimonials" class="mt-16 py-20 bg-indigo-100">
+      <h4
+        class="font-medium text-sm text-zinc-500 uppercase text-center mt-0 mx-0 mb-8"
+      >
+        Calificaciones
+      </h4>
+      <h1
+        class="text-5xl tracking-tighter font-semibold text-zinc-700 text-center mt-0 mx-4 mb-8"
+      >
+        Opiniones de nuestros usuarios
+      </h1>
+      <div class="swiper mySwiper w-10/12 mt-16">
+        <div class="swiper-wrapper mb-16">
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Recomiendo el servicio. Necesitaba el dinero para un gasto
+              imprevisto, y gracias a Add Cash lo obtuve en el momento.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./profile1.jpg" alt="User One" />
+              </div>
+              <div class="user__details">
+                <h5>Juan López</h5>
+                <small>Usuario</small>
+              </div>
+            </div>
+          </article>
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Buen servicio y fácil de utilizar. Con Add Cash recibí el monto
+              que precisaba rápido y sin problemas. Lo volveré a usar.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./profile2.jpg" alt="User Two" />
+              </div>
+              <div class="user__details">
+                <h5>Carolina Rodriguez</h5>
+                <small>Usuaria</small>
+              </div>
+            </div>
+          </article>
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Servicio rápido y eficiente. Me comuniqué por dudas que tenía
+              respecto a costos adicionales y me asesoraron muy bien.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./profile3.jpg" alt="User Three" />
+              </div>
+              <div class="user__details">
+                <h5>Bautista González</h5>
+                <small>Usuario</small>
+              </div>
+            </div>
+          </article>
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Es la primera vez que utilizo el servicio y estaba un poco
+              desorientada, pero me comuniqué y estuvieron a mi disposición sin
+              problemas.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./avatar5.jpg" alt="User Four" />
+              </div>
+              <div class="user__details">
+                <h5>Sofia Martinez</h5>
+                <small>Usuaria</small>
+              </div>
+            </div>
+          </article>
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Buena experiencia, el proceso me pareció transparente y confiable.
+              Ya es mi segunda vez accediendo a un préstamo con Add Cash.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./avatar6.jpg" alt="User Five" />
+              </div>
+              <div class="user__details">
+                <h5>Martina Ayala</h5>
+                <small>Usuaria</small>
+              </div>
+            </div>
+          </article>
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Conforme con el servicio. En menos de dos horas tuve el dinero que
+              pedi en mi cuenta de MercadoPago. Lo volveré a utilizar.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./avatar3.jpg" alt="User Six" />
+              </div>
+              <div class="user__details">
+                <h5>Franco Barraza</h5>
+                <small>Usuario</small>
+              </div>
+            </div>
+          </article>
+          <article
+            class="swiper-slide bg-slate-50 py-6 px-8 rounded-2xl cursor-default text-sm"
+          >
+            <p class="mb-6">
+              Conoci AddCash por recomendación de un conocido, y me decidi por
+              su facilidad y costos adicionales bajos. Recomiendo.
+            </p>
+            <div class="user flex items-center gap-4">
+              <div
+                class="avatar w-10 aspect-square rounded-full overflow-hidden"
+              >
+                <img src="./avatar2.jpg" alt="user Seven" />
+              </div>
+              <div class="user__details">
+                <h5>Marcos Pellegrino</h5>
+                <small>Usuario</small>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+    <section id="contact" class="py-20 bg-white">
+      <h4
+        class="font-medium text-sm text-zinc-500 uppercase text-center mt-0 mx-0 mb-8"
+      >
+        ¿Consultas sobre Add Cash?
+      </h4>
+      <h1
+        class="text-5xl tracking-tighter font-semibold text-zinc-700 text-center mt-0 mx-4 mb-8"
+      >
+        Contáctenos
+      </h1>
+      <div
+        class="container grid grid-cols-1 place-items-center md:grid-cols-2 gap-28"
+      >
+        <img
+          src="./pexels-cottonbro-studio-4065158.jpg"
+          class="mt-12 md:ml-28 h-11/12 w-10/12"
+          alt=""
+        />
+        <div class="w-10/12 mt-12 border-0 outline-0 box-border">
+          <article class="flex gap-4 mb-8">
+            <div
+              class="bg-indigo-500 text-white p-3 rounded-md flex h-fit text-lg"
+            >
+              <i class="fa fa-2x fa-envelope text-white"></i>
+            </div>
+            <div>
+              <h4>Envíe un email</h4>
+              <p class="text-sm">support@addcash.com</p>
+            </div>
+          </article>
+          <form class="flex flex-col gap-2.5">
+            <label
+              for="name"
+              class="text-sm inline-block font-semibold text-neutral-600"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="bg-slate-200 py-2 w-full block rounded resize-none appearance-none focus:bg-white focus:border-b-2 border-b-indigo-400 outline-none text-slate-600"
+              required
+            />
+
+            <label
+              for="email"
+              class="text-sm mt-4 inline-block font-semibold text-neutral-600"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-slate-200 py-2 w-full block rounded resize-none appearance-none focus:bg-white focus:border-b-2 border-b-indigo-400 outline-none text-slate-600"
+              required
+            />
+            <small class="text-indigo-400"
+              >No compartiremos su email con terceros.</small
+            >
+
+            <label
+              for="reason"
+              class="text-sm mt-4 inline-block font-semibold text-neutral-600"
+              >Asunto</label
+            >
+            <input
+              type="text"
+              name="reason"
+              id="reason"
+              class="bg-slate-200 py-2 w-full block rounded resize-none appearance-none focus:bg-white focus:border-b-2 border-b-indigo-400 outline-none text-slate-600"
+              required
+            />
+
+            <label
+              for="message"
+              class="text-sm mt-4 inline-block font-semibold text-neutral-600"
+              >Mensaje</label
+            >
+            <textarea
+              class="bg-slate-200 w-full block rounded resize-none appearance-none focus:outline-none text-slate-600"
+              rows="5"
+              required="required"
+            ></textarea>
+            <input
+              type="submit"
+              value="Enviar"
+              class="inline-block mt-4 w-fit py-2 px-5 rounded bg-indigo-500 text-white cursor-pointer transition-all delay-300 hover:bg-indigo-600 shadow-sm shadow-indigo-500"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END OF CONTACT -->
+    <footer class="bg-zinc-900 p-10 text-slate-200">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-20 text-xs">
+          <article class="flex flex-col gap-1">
+            <a href="#" class="footer__logo">
+              <h3 class="text-lg font-normal text-white">
+                <i class="fa-solid fa-hand-holding-dollar mr-1"></i>
+                Add Cash
+              </h3>
+            </a>
+            <div class="hidden lg:flex items-center gap-2">
+              <i class="fa-solid fa-phone text-sm mr-2"></i>
+              <small class="text-sm">+1130480553</small>
+            </div>
+            <div class="hidden lg:flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-sm mr-2"></i>
+              <small class="text-sm">support@addcash.com</small>
+            </div>
+          </article>
+
+          <article class="flex flex-col gap-1">
+            <h3 class="text-lg font-normal text-white">Soporte</h3>
+            <a href="#" class="text-sm hover:text-white"
+              >Política de Privacidad</a
+            >
+            <a href="#" class="text-sm hover:text-white">Política de Cookies</a>
+            <a href="#" class="text-sm hover:text-white"
+              >Términos & Condiciones</a
+            >
+          </article>
+
+          <article class="flex flex-col gap-1">
+            <h3 class="text-lg font-normal text-white">Permalinks</h3>
+            <a href="#" class="text-sm hover:text-white">Home</a>
+            <a href="#steps" class="text-sm hover:text-white"
+              >¿Cómo pedir un préstamo?</a
+            >
+            <a href="#testimonials" class="text-sm hover:text-white"
+              >Calificaciones</a
+            >
+            <a href="#contact" class="text-sm hover:text-white">Contacto</a>
+            <a
+              href="index.html"
+              class="mt-1 text-base inline-block w-fit py-3 px-4 rounded-md bg-indigo-500 text-white cursor-pointer transition-all delay-300 hover:bg-indigo-600 shadow-sm shadow-indigo-500"
+            >
+              Solicitar servicio
+            </a>
+          </article>
+
+          <article class="flex flex-col gap-1">
+            <h3 class="text-lg font-normal text-white">Contáctenos</h3>
+            <a href="#" class="text-sm hover:text-white">FAQs</a>
+            <div class="flex items-center gap-2">
+              <a href="#" class="text-sm hover:text-white"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-sm hover:text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="text-sm hover:text-white"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="text-sm hover:text-white"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="text-center py-6 px-0 mt-16 border-t border-t-slate-400">
+        <small>&copy; Copyright AddCash. All Rights Reserved</small>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': 'Inter, sans-serif'
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>

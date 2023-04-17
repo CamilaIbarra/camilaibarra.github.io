@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7de6ab665e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwindcss font  -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+  </head>
+
+  <body class="font-sans leading-normal text-zinc-800 bg-white select-none">
+    <section class="bg-slate-100 min-h-screen flex items-center justify-center">
+      <div class="bg-white flex rounded-xl shadow-lg max-w-3xl p-5">
+        <div class="md:w-1/2 px-16">
+          <!-- add cash logo -->
+          <div class="flex items-center py-3">
+            <a href="index.html">
+              <h2
+                class="font-sans tracking-tighter text-3xl font-semibold leading-tight"
+              >
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Add Cash
+              </h2>
+            </a>
+          </div>
+          <h2 class="font-bold text-2xl text-zinc-700">Registro</h2>
+          <p class="text-sm mt-2 text-zinc-500">
+            Por favor, ingrese sus datos para crear su cuenta.
+          </p>
+          <form action="" class="flex flex-col">
+            <input
+              type="email"
+              class="p-2 mt-4 rounded-xl border outline-none placeholder:text-sm focus:border-indigo-500"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="p-2 mt-4 rounded-xl border outline-none placeholder:text-sm focus:border-indigo-500"
+              name="curp"
+              id="curp"
+              placeholder="CURP"
+            />
+            <input
+              type="text"
+              class="p-2 mt-4 rounded-xl border outline-none placeholder:text-sm focus:border-indigo-500"
+              name="phone"
+              id="phone"
+              placeholder="Telefono"
+            />
+            <input
+              type="text"
+              class="p-2 mt-4 rounded-xl border outline-none placeholder:text-sm focus:border-indigo-500"
+              name="bank_account"
+              id="bank_account"
+              placeholder="Nro de cuenta"
+            />
+            <input
+              type="password"
+              class="p-2 mt-4 rounded-xl border outline-none placeholder:text-sm focus:border-indigo-500"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <input
+              type="password"
+              class="p-2 mt-4 rounded-xl border outline-none placeholder:text-sm focus:border-indigo-500"
+              name="password_confirm"
+              id="password_confirm"
+              placeholder="Confirmar contraseña"
+            />
+            <button
+              class="bg-indigo-500 rounded-xl text-slate-100 py-2 mt-4 font-medium hover:bg-indigo-600"
+            >
+              Registrar
+            </button>
+          </form>
+        </div>
+        <div class="md:block hidden w-1/2">
+          <img
+            class="rounded-xl"
+            src="https://images.pexels.com/photos/5797997/pexels-photo-5797997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="rounded-2xl"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
