@@ -1,8 +1,8 @@
-# Add Cash
-Boceto de landing para Add Cash.
+# ADECASH
+Boceto de landing para ADECASH.
 <br>
 <br>
-GitHubPages URL: [Add Cash Landing](https://camilaibarra.github.io/)
+GitHubPages URL: [ADECASH Landing](https://camilaibarra.github.io/)
 <p>Al hacer click en el botón de "Solicitar servicio" en la barra de navegación, será redirigido al boceto de formulario de registro.<br>
 Ambos diseños se encuentran sujetos a modificaciones/adaptaciones.<br>
 Se necesitan definir los textos, logo y colores representativos del producto para hacer los reemplazos correspondientes.</p>
